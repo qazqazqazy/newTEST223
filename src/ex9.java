@@ -4,9 +4,6 @@ public class ex9 {
     public static void main(String[] args)
 
     {
-
-        // Нахождение минимального элемента в массиве myArray из 4 элементов типа double.
-
        int myArray [] = new int[10];
        int i;
        for (i=0; i<10; i++)
