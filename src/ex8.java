@@ -4,9 +4,8 @@ public class ex8 {
         int x = 1;
         while( x < 51 )
         {
-            System.out.print( + x );
+            System.out.print( + x + "\n" );
             x++;
-            System.out.print("\n");
 
         }
 
