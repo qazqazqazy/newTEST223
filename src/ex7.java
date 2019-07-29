@@ -5,7 +5,7 @@ public class ex7 {
     public static void main(String args[]) {
 
         int x=10;
-        int y=33;
+        int y=10;
         int z=27;
 
         System.out.println("Введите значение переменной number:");
@@ -13,7 +13,7 @@ public class ex7 {
         int  number = scan.nextInt();
 
 
-        if ((number == x)^(number == y) ^ (number == z)) {
+        if ((number == x) ||(number == y) ||(number == z)) {
 
         System.out.println("Данное значение имеется в константах");
 
