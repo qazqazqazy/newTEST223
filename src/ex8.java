@@ -4,7 +4,7 @@ public class ex8 {
         int x = 1;
         while( x < 51 )
         {
-            System.out.print( + x + "\n" );
+            System.out.print( x + "\n" ); //убрала лишнее
             x++;
 
         }
