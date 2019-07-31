@@ -7,17 +7,17 @@ public class ex10 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите  размерность матрицы (шаг 1):");
         int a = scan.nextInt();
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in); избыточно
         System.out.println("Введите  размерность матрицы (шаг 2):");
-        int b = sc.nextInt();
+        int b = scan.nextInt();
 
         int tablе[][] = new int[a][b];
         int i, j;
         for (i = 0; i < a; ++ i)
             {for (j = 0; j < b; ++ j)
                 {System.out.println("Введите значения элементов массива: элемент "  + i + j);
-                Scanner n = new Scanner(System.in);
-                int  number = n.nextInt();
+                //Scanner n = new Scanner(System.in); избыточно
+                int  number = scan.nextInt();
                 tablе[i][j] = number;
                 System.out.println("Элемент [" + i + j +"] : " + tablе[i][j]);}}
 
