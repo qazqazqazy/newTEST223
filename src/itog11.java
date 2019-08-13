@@ -16,7 +16,7 @@ public class itog11 {
         }
         int dec =0;
         int tmp = 0;
-        for (int i = 0; i < msint.length; i ++) //начальный элемент массива имеет индекс 0, цикл выполняется, пока счетчик  меньше 6, прибавяем
+        for (int i = 0; i < msint.length; i ++)
         {
             tmp = (int)Math.pow(2, (msint.length - 1 - i)) * msint[i];
             dec = dec + tmp;
