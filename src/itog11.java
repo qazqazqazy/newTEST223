@@ -9,20 +9,18 @@ public class itog11 {
         String a = scan.nextLine();
         char[] ms = a.toCharArray();
 
-
         int[] msint = new int[ms.length];
-        for (int i = 0; i<ms.length; i ++)
-        {msint[i] =  Integer.parseInt(String.valueOf(ms[i]));
-        }
-        int dec =0;
+        for (int i = 0; i < ms.length; i ++) {
+            msint[i] =  Integer.parseInt(String.valueOf(ms[i]));
+            }
+
         int tmp = 0;
-        for (int i = 0; i < msint.length; i ++)
-        {
-            tmp = (int)Math.pow(2, (msint.length - 1 - i)) * msint[i];
-            dec = dec + tmp;
-            //System.out.println( msint[i] + "=" + tmp);
+        for (int i = 0; i < msint.length; i ++) {
+            if (msint [i] != 0) {
+            tmp = tmp + (int) Math.pow(2, (msint.length - 1 - i)) * msint[i];
+            }
         }
-        System.out.println("Результат в десятичной системе счисления: " + dec);
+        System.out.println("Результат в десятичной системе счисления: " + tmp);
 
     }
 }
